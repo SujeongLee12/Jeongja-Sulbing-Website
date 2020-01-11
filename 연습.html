@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+var navigation = ["소개", "오시는 길", "메뉴", "이벤트"]
+i = 0;
+while(i < navigation.length){
+ document.write('<li><a href="'+navigation[]+'.html">'+navigation[i]+'</a></li>');
+i = i + 1;
+  };
+</script>
+ 
+</body>
+</html>
+
+
+<script>
+function list(start, end){
+ i = start
+ while(i <= end){
+ if(i = start ){
+  document.write('<p><li><img src="'+bingsuURL[i]+'"></li>')
+  i = i + 1;}
+ if(i = end){
+  document.write('<li><img src="'+bingsuURL[i]+'"></li></p>')
+  i = i + 1;
+ }else{
+  document.write('<li><img src="'+bingsuURL[i]+'"></li>')
+  i = i + 1;
+ }   
+ }
+}
+</script>

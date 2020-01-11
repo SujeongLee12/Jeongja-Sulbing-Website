@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+ <input type="button" value="fetch" onclick="
+  fetch('menu.html').then(function(response){
+   response.text().then(function(text){
+    document.querySelectorAll('a').innerHTML = text;
+   })
+  })
+ ">
+</body>
+</html>
